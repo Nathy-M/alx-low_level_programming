@@ -3,15 +3,15 @@
 /**
  * main -- printing alphabet in reverse order
  *
- * return: Returns 0
+ * Return: Always 0
  */
 int main(void)
 {
 	char letter;
 
-	for (letter = 'z'; letter <= 'a'; letter++)
+	for (letter = 'z'; letter >= 'a'; letter++)
 	{
 		putchar(letter);
 	}
 putchar('\n');
-return (0); }
+return (0); i}
