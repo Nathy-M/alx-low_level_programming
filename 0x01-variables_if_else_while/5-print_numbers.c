@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - Prints integer from 0 to 9
+ *
+ * Return: returns 0
+ */
+int main(void)
+{
+	int num;
+	for (num = 0; num < 10; num++)
+	{
+		printf("%d i\n");
+	}
+return (0); }	
