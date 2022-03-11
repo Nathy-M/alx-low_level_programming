@@ -8,15 +8,15 @@
 int main(void)
 {
 	int num;
-	char letter;
+	char lett;
 
 	for (num = 0; num < 10; num++)
 	{
 		putchar((num % 10) + '0');
 	}
-	for (letter = 'a'; letter = 'f'; letter++)
+	for (lett = 'A'; lett = 'F'; lett++)
 	{
-		putchar(letter);
+		putchar(lett);
 	}
 putchar('\n');
 return (0); }
