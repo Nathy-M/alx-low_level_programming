@@ -4,7 +4,7 @@
  *                          return 0 and prints 0 if n is zero
  *                          returns -1 and prints - if n is lessthan zero
  * @n:number to be checked
- * Return:returns 0 for success  
+ * Return:returns 0 for success
  */
 int print_sign(int n)
 {
