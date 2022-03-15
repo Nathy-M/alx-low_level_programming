@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**_putchar - writes thr character c to stdout
  * @c: The character to print
@@ -8,5 +7,5 @@
  */
 int main(void)
 {
-	putchar('_putchar');
+	_putchar('_putchar');
 return (0); }	
