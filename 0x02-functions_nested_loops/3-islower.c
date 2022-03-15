@@ -4,17 +4,8 @@
  */
 int _islower(int c)
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		if (c = letter)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-	}
+	if (c = 'a' && c = 'z')
+		return (1);	
+	else
+		return (0);
 }
