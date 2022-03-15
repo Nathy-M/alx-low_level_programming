@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * print_to_98 - prints a natural number upto 98
+ * @n: destination natural number to be printed
  */
 void print_to_98(int n)
 {
