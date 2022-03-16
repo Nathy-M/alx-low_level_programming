@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	unsigned long int num1 = 0;
-	unsigned long int num2 = 1;
+	unsigned long num1 = 0;
+	unsigned long num2 = 1;
 	int num3;
-	unsigned long int nextTerm;
+	unsigned long nextTerm;
 
 	for (num3 = 0; num3 < 50; num3++)
 	{
