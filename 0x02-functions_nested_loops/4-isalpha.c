@@ -2,7 +2,7 @@
 /**
  * _isalpha - checking for upper, lower and letter
  * @c: parameter to be passed
- * Return: returns 1 or 0 
+ * Return: returns 1 or 0
  */
 int _isalpha(int c)
 {
