@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	int num1 = 0;
-	int num2 = 1;
+	long long int num1 = 0;
+	long long int num2 = 1;
 	int num3;
-	int nextTerm;
+	long long int nextTerm;
 
 	for (num3 = 0; num3 < 50; num3++)
 	{
 		nextTerm = num1 + num2;
 
-		printf("%d", nextTerm);
+		printf("%lld", nextTerm);
 
 		num1 = num2;
 		num2 = nextTerm;
