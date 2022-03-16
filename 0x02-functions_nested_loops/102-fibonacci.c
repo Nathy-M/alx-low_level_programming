@@ -12,9 +12,9 @@ int main(void)
 	int num3;
 	int nextTerm;
 
-	nextTerm = num1 +num2;
+	nextTerm = num1 + num2;
 
-	for (num3 = 3; num3 <= 50; num3++)
+	for (num3 = 0; num3 < 50; num3++)
 	{
 		printf("%d, ", nextTerm);
 
