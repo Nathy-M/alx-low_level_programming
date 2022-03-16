@@ -16,8 +16,8 @@ int main(void)
 
 	for (num3 = 0; num3 < 50; num3++)
 	{
-		printf("%d, ", nextTerm);
-
+		printf("%d", nextTerm);
+		nextTerm = num1 + num2;
 		num1 = num2;
 		num2 = nextTerm;
 
@@ -26,5 +26,5 @@ int main(void)
 		else
 			printf(", ");
 	}
-	return 0;
+	return (0);
 }
