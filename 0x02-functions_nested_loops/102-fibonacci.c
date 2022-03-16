@@ -7,21 +7,21 @@
  */
 int main(void)
 {
-	long long int num1 = 0;
-	long long int num2 = 1;
+	unsigned long int num1 = 0;
+	unsigned long int num2 = 1;
 	int num3;
-	long long int nextTerm;
+	unsigned long int nextTerm;
 
 	for (num3 = 0; num3 < 50; num3++)
 	{
 		nextTerm = num1 + num2;
 
-		printf("%lld", nextTerm);
+		printf("%lu", nextTerm);
 
 		num1 = num2;
 		num2 = nextTerm;
 
-		if (num3 == 50)
+		if (num3 == 49)
 			printf("\n");
 		else
 			printf(", ");
