@@ -12,12 +12,12 @@ int main(void)
 	int num3;
 	int nextTerm;
 
-	nextTerm = num1 + num2;
-
-	for (num3 = 1; num3 < 50; num3++)
+	for (num3 = 0; num3 < 50; num3++)
 	{
-		printf("%d", nextTerm);
 		nextTerm = num1 + num2;
+
+		printf("%d", nextTerm);
+
 		num1 = num2;
 		num2 = nextTerm;
 
