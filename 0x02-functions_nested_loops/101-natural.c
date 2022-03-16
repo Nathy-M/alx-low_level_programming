@@ -19,7 +19,7 @@ int main(void)
 		}
 	}
 
-printf("Sum of the numbers %d is: %d", num1, sum);
+printf("%d\n", sum);
 return (0);
 }
 
