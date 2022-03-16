@@ -16,7 +16,7 @@ int main(void)
 	{
 		nextTerm = num1 + num2;
 
-		printf("%d", nextTerm);
+		printf("%lo", nextTerm);
 
 		num1 = num2;
 		num2 = nextTerm;
