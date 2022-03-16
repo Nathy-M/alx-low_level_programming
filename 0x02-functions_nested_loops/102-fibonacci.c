@@ -14,7 +14,7 @@ int main(void)
 
 	nextTerm = num1 + num2;
 
-	for (num3 = 0; num3 < 50; num3++)
+	for (num3 = 1; num3 < 50; num3++)
 	{
 		printf("%d", nextTerm);
 		nextTerm = num1 + num2;
