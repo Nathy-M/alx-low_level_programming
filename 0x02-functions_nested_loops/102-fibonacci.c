@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	long long int num1 = 0;
-	long long int num2 = 1;
+	int num1 = 0;
+	int num2 = 1;
 	int num3;
-	long long int nextTerm;
+	int nextTerm;
 
 	for (num3 = 0; num3 < 50; num3++)
 	{
@@ -21,7 +21,7 @@ int main(void)
 		num1 = num2;
 		num2 = nextTerm;
 
-		if (num3 == 49)
+		if (num3 == 50)
 			printf("\n");
 		else
 			printf(", ");
