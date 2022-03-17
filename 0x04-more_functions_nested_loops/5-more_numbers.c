@@ -12,12 +12,17 @@ void more_numbers(void)
 	while (count <= 9)
 	{
 
-	for (num = 0; num <= 9; num++)
+	for (num = 0; num <= 14; num++)
+	{
+		if (num > 9)
+		{
+			_putchar((num % 10) + '9');
+		}
 		_putchar((num % 10) + '0');
-	for (num = 1; num <= 5; num++)
-		_putchar((num % 10) + '9');
+	}
 	_putchar('\n');
 
 	count++;
+
 	}
 }
