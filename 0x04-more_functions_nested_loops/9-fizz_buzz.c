@@ -11,13 +11,13 @@ int main(void)
 	for (num = 1; num <= 100; num++)
 	{
 		if ((num % 3) == 0 && (num % 5) == 0)
-			printf("FizzNuzz");
+			printf("FizzNuzz \t");
 		else if ((num % 3) == 0)
-			printf("Fizz");
+			printf("Fizz \t");
 		else if ((num % 5) == 0)
-			printf("Buzz");
+			printf("Buzz \t");
 		else
-			printf("%d", num);
+			printf("%d ", num);
 		if (num == 100)
 			continue;
 		printf(" ");
