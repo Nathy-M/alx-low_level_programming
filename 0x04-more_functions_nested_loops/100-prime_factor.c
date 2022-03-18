@@ -6,25 +6,20 @@
  */
 int main(void)
 {
-	long num = 612852475143;
-	long count;
+	long int num = 612852475143;
+	int count;
 
-	while (count < (num / 2))
+	for (count = 2; num > 1; count++)
 	{
-		if ((num % 2) == 0)
+		while (num % count == 0)
 		{
-			num /= 2;
-			continue;
+			num = num / count;
 		}
 
-		for (count = 3; count < (num / 2); count++)
+		if (count > num)
 		{
-			if ((num % count) == 0)
-			{
-				num /= count;
-			}
+			printf("%ld\n", count);
 		}
 	}
-	printf("%ld\n", prime);
 	return (0);
 }
