@@ -18,7 +18,7 @@ int main(void)
 		}
 		if (count > num)
 		{
-			printf("ld", count);
+			printf("%ld", count);
 		}
 	}
 	
