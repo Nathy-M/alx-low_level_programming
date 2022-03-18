@@ -2,9 +2,6 @@
 /**
  * print_triangle - prints triangle
  * @size: size of triangle
- * @height: height of triangle
- * @length: length of triangle
- * @i - i
  * Return: returns 0
  */
 void print_triangle(int size)
@@ -23,7 +20,7 @@ void print_triangle(int size)
 		{
 			for (length = size - height; length > 0; length--)
 			{
-				_putchar(' ');
+				_putchar('.');
 			}
 			for (i = 1; i <= height; i++)
 			{
