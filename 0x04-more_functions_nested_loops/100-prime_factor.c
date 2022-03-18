@@ -19,6 +19,7 @@ int main(void)
 		{
 			printf("%ld", count);
 		}
+		printf("\n");
 	}
 	return (0);
 }
