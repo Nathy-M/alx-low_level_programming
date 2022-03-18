@@ -9,7 +9,7 @@ int main(void)
 	long int num = 612852475143;
 	int count;
 
-	for (count = 2; num > 1; count++)
+	for (count = 2; count > 1; count++)
 	{
 		while (num % count == 0)
 		{
