@@ -13,7 +13,6 @@ int main(void)
 	{
 		while (num % count == 0)
 		{
-			printf("%ld ", count);
 			num = num / count;
 		}
 		if (count > num)
@@ -21,7 +20,5 @@ int main(void)
 			printf("%ld", count);
 		}
 	}
-	
-
 	return (0);
 }
