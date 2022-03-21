@@ -8,9 +8,8 @@
 int _strlen(const char *s)
 {
 	int str_len;
-	char name;
-
-	name = s;
-	str_len = strlen(name);
+	
+	while (*s != '\0')
+		str_len++;
 	return (str_len);
 }
