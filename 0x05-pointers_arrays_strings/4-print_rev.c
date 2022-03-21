@@ -6,10 +6,9 @@
  */
 void print_rev(char *s)
 {
-	char *temp_str;
 	int count;
 
-	for (count = s.length() - 1; count > 0; count--)
+	for (count = *s.length() - 1; count > 0; count--)
 	{
 		_putchar(count);
 	}
