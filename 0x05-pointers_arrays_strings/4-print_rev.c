@@ -7,8 +7,14 @@
 void print_rev(char *s)
 {
 	int count;
+	int num;
 
-	for (count = *s.length() - 1; count > 0; count--)
+	while (*s != '\0')
+	{
+		num = s++;
+	}
+
+	for (count = num - 1; count > 0; count--)
 	{
 		_putchar(count);
 	}
