@@ -5,17 +5,11 @@
  */
 void rev_string(char *s)
 {
-	int count;
-	int num;
 
 	while (*s != '\0')
 	{
-		num++;
+		strrev(s);
 		s++;
 	}
 
-	for (count = num; count >= 0; count++)
-	{
-		strrev(s);
-	}
 }
