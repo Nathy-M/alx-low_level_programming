@@ -8,7 +8,9 @@
 int _strlen(const char *s)
 {
 	int str_len;
+	char name;
 
-	str_len = strlen(char *s);
-	return str_len;
+	name = s;
+	str_len = strlen(name);
+	return (str_len);
 }
