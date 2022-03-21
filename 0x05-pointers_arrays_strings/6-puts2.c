@@ -14,12 +14,9 @@ void puts2(char *str)
 		num++;
 		str++;
 	}
-	for (count = 0; count <= num; count++)
+	for (count = 0; count < num; count += 2)
 	{
-		if (count % 2 == 0)
-		{
-			_putchar(count);
-		}
+		_putchar(count);
 	}
 	_putchar('\n');
 }
