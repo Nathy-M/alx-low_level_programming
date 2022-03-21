@@ -11,6 +11,7 @@ void print_rev(char *s)
 
 	for (count = s.length() - 1; count > 0; count--)
 	{
-		*temp_str = *s(count);
+		_putchar(count);
 	}
+	_putchar('\n');
 }
