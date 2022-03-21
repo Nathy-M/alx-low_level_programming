@@ -5,7 +5,7 @@
  * @s: a charcter argument
  * Return: returns string length
  */
-int _strlen(const char *s)
+int _strlen(char *s)
 {
 	int str_len;
 	
