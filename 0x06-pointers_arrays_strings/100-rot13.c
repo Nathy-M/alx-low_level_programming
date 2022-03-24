@@ -10,7 +10,7 @@ char *rot13(char *str)
 
 	while (str[num])
 	{
-		for (str[num] = 'a'; str[num] = 'z'; str[num]++)
+		for (str[num] = 'a'; str[num] <= 'z'; str[num]++)
 		{
 			str[num] += 13;
 			if (str[num] >= 'A' && str[num] <= 'Z')
