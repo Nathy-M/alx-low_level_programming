@@ -12,4 +12,5 @@ char *string_toupper(char *word)
 			word[num] -= 32;
 		num++;
 	}
+	return (word);
 }
