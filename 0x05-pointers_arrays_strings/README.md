@@ -1,1 +1,1 @@
-new pointers and arrays
+C pointers and arrays
