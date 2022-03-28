@@ -10,18 +10,6 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned in count;
-	unsigned int counter;
-
-	for (count = 0; count <= accept[count]; count++)
-	{
-		if (*s == accept[count])
-		{
-			counter++;
-			break;
-		}
-		else if (accept[count + 1] == '\0')
-			return (counter);
-	}
-	return (counter);
+	strspn(s, accept);
+	return (s);
 }
