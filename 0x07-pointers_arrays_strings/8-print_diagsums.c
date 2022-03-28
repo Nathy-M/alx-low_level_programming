@@ -7,7 +7,6 @@
 void print_diagsums(int *a, int size)
 {
 	int rcounter;
-	int ccounter;
 	int sum = 0;
 	int sum1 = 0;
 
