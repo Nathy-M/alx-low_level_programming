@@ -11,5 +11,5 @@
 char *_strstr(char *haystack, char *needle)
 {
 	strstr(haystack, needle);
-	return (haystack);
+	return ('\0');
 }
