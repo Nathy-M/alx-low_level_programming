@@ -11,25 +11,10 @@ void print_diagsums(int *a, int size)
 	int sum = 0;
 	int sum1 = 0;
 
-	for (rcounter = 0; rcounter < size; rcounter++)
+	for (rcounter = 0; rcounter < size; ++rcounter)
 	{
-		for (ccounter = 0; ccounter < size; ccounter++)
-		{
-			if (rcounter == ccounter)
-			{
-				sum += a[rcounter][ccounter];
-			}
-		}
-	}
-	for (rcounter = size; rcounter <= 0; rcounter--)
-	{
-		for (ccounter = size; ccounter <= 0; ccounter--)
-		{
-			if (rcounter == ccounter)
-			{
-				sum1 += a[rcounter][ccounter];
-			}
-		}
+		sum = sum + a[rcounter][rcounter];
+		sum1 = sum1 + a[rcounter][size - rcounter - 1];
 	}
 	printf("%d, %d\n", sum, sum1);
 }
