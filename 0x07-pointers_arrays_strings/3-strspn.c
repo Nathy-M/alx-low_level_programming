@@ -10,6 +10,6 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	strspn(s, accept);
+	strspn(*s, accept);
 	return (s);
 }
