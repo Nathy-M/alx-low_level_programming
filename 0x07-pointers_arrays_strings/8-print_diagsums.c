@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_diagsums - calculates diagonal sums and prints the result.
  * @a: the matrix of integers.
@@ -7,13 +8,20 @@
 void print_diagsums(int *a, int size)
 {
 	int rcounter;
-	int sum = 0;
 	int sum1 = 0;
+	int sum2 = 0;
 
-	for (rcounter = 0; rcounter < size; ++rcounter)
+	for (rcounter = 0; rcounter < size; rcounter++)
 	{
-		sum = sum + a[rcounter][rcounter];
-		sum1 = sum1 + a[rcounter][size - rcounter - 1];
+		sum1 += a[rcounter];
+		a += size;
 	}
-	printf("%d, %d\n", sum, sum1);
+	a -= size;
+	for (rcounter = 0; rcounter < size; rcounter++)
+	{
+		sum2 += a[rcounter];
+		a -= size;
+	}
+
+	printf("%d, %d\n", sum1, sum2);
 }
