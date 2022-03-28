@@ -18,6 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		if (*s == accept[count])
 		{
 			counter++;
+			break;
 		}
 		else if (accept[count + 1] == '\0')
 			return (counter);
