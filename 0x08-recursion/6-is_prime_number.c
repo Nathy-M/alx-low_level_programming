@@ -6,6 +6,8 @@
  * Return: returns 1 if number is prime.
  *         otherwise returns 0
  */
+int is_prime(int num, int div);
+int is_prime_number(int n);
 
 int is_prime_number(int n)
 {
