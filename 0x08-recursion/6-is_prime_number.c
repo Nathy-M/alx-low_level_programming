@@ -2,11 +2,14 @@
 
 int is_prime(int n, int mid);
 int is_prime_number(int n);
+
 /**
  * is_prime - Checks if a number is divisible.
- * @num: The number to be checked.
- * @div: the divisor.
- * Return: num
+ * @n: The number to be checked.
+ * @mid: middle of the given number
+ *
+ * Return: returns 1 if the number is prime
+ *         returns 0 otherwise
  */
 
 int is_prime(int n, int mid)
@@ -43,7 +46,7 @@ int is_prime_number(int n)
 	int mid = n / 2;
 
 
-	if (n == 0 && n == 1)
+	if (n == 1)
 	{
 	return (0);
 	}
