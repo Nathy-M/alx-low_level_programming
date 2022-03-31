@@ -29,7 +29,7 @@ int is_palindrome(char *s)
 	int index = 0;
 	int str_len;
 
-	str_len = strlen(*s);
+	str_len = strlen(s);
 	if (*s != '\0')
 		return (1);
 	return (_is_palindrome(s, str_len, index));
