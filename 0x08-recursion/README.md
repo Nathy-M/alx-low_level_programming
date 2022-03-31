@@ -56,4 +56,4 @@ C Function that returns factorial of a given number.
 
 
 
-> HARD WORK PAY OFF. :muscle: :computer:
+> HARD WORK PAYS OFF. :muscle: :computer:
