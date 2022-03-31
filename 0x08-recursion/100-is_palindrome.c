@@ -5,7 +5,7 @@ int _is_palindrome(char *s, int str_len, int index);
 int is_palindrome(char *s);
 /**
  * _is_palindrome - check if the string is palindrome using recursion
- * @s; string to be checked.
+ * @s: string to be checked.
  * @str_len: string length
  * @index: index to be checked
  * Return: returns 1 or 0
