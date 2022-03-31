@@ -1,6 +1,39 @@
 #include "main.h"
-#include <stdlib.h>
-#include <math.h>
+
+int _sqrt(int low, int high, int n);
+int _sqrt_recursion(int n);
+
+/**
+ * _sqrt - calculates square root of the number.
+ * @low: lowest range that a square root value starts
+ * @high: highest range
+ * @n: number to be computed
+ *
+ * Return: returns square root of a number.
+ */
+
+int _sqrt( int low, int high, int n)
+{
+	if (low <= high)
+	{
+		int mid = (low + high) / 2;
+
+		if ((mid * mid <= n) && ((mid + 1) * (mid + 1) > N))
+		{
+			return (mid);
+		}
+		else if (mid *mid < n)
+		{
+			return (_sqrt(mid + 1, high, n));
+		}
+		else
+		{
+			return (_sqrt(low, mid - 1, n));
+		}
+	}
+	return (low);
+}
+
 /**
  * _sqrt_recursion - function that returns the natural square root of
  * a number.
@@ -13,9 +46,8 @@
 
 int _sqrt_recursion(int n)
 {
-	int start = 1;
-	int end = n;
-	int ans;
+	int low = 0;
+	int high = n;
 
 	if (n < 0)
 	{
@@ -25,20 +57,6 @@ int _sqrt_recursion(int n)
 	{
 		return (0);
 	}
-	
-	while (start <= end)
-	{
-		int mid = (start + (end - start) / 2);
 
-		if (mid <= (n / mid))
-		{
-			ans = mid;
-			start = mid + 1;
-		}
-		else
-		{
-			end = mid - 1;
-		}
-	}
-	return (ans);
+	return (_sqrt(low, high, n));
 }
