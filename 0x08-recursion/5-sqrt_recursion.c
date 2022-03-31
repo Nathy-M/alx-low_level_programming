@@ -18,7 +18,7 @@ int _sqrt( int low, int high, int n)
 	{
 		int mid = (low + high) / 2;
 
-		if ((mid * mid <= n) && ((mid + 1) * (mid + 1) > N))
+		if ((mid * mid <= n) && ((mid + 1) * (mid + 1) > n))
 		{
 			return (mid);
 		}
