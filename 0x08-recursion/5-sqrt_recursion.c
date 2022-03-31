@@ -12,7 +12,7 @@ int _sqrt_recursion(int n);
  * Return: returns square root of a number.
  */
 
-int _sqrt( int low, int high, int n)
+int _sqrt(int low, int high, int n)
 {
 	if (low <= high)
 	{
@@ -22,7 +22,7 @@ int _sqrt( int low, int high, int n)
 		{
 			return (mid);
 		}
-		else if (mid *mid < n)
+		else if (mid * mid < n)
 		{
 			return (_sqrt(mid + 1, high, n));
 		}
