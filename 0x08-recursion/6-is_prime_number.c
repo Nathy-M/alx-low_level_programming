@@ -25,7 +25,7 @@ int is_prime(int n, int mid)
 
 		else
 		{
-			is_prime(n, mid - 1);
+			return (is_prime(n, mid - 1));
 		}
 	}
 }
