@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int mul;
+	int mul = 1;
 	int i;
 
 		if (argc != 3)
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		else
+		ele
 		{
 			for (i = 1; i < argc; i++)
 			{
