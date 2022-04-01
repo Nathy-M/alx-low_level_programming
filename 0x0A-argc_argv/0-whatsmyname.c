@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - prints program name.
- * @argc: represent number of the command line entered while running the program.
+ * @argc: represent number of the command line entered while running the program
  * @argv: an array of pointers to the strings.
  *
  * Return: Always 0.
