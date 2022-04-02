@@ -16,10 +16,9 @@ int main(int argc, char *argv[])
 	unsigned int sum = 0;
 	unsigned int num;
 
-	if (argc < 3)
+	if (argc < 1)
 	{
 		printf("0\n");
-		return (0);
 	}
 	while (argc-- && argc > 0)
 	{
