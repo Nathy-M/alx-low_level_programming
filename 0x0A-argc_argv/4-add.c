@@ -20,6 +20,8 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
+	else
+	{
 	for (i = 1; i < argc; i++)
 	{
 		if ((argv[i] >= 65 && argv[i] <= 90) || (argv[i] >= 97 && argv[i] <= 122))
@@ -32,6 +34,7 @@ int main(int argc, char *argv[])
 			num = atoi(argv[i]);
 			sum += num;
 		}
+	}
 	}
 		printf ("%d\n", sum);
 		return (0);
