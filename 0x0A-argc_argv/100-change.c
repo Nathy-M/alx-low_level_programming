@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	if (cents < 0)
 	{
-		printf("%d\n", 0);
+		printf("0");
 	}
 
 	if (cents % 25 >= 0)
