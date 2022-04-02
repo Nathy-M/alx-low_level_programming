@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * main - main function
  * @argc: size of the argv array
@@ -13,14 +14,14 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 0;
 
-	if (argc < 3)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
 
 	for (i = 1; i < argc; i++)
 	{
-		if ((argv[i] >= 65 && argv[i] <= 90) || (argv[i] >= 97 && argv[i] <= 122))
+		if (!(isdigit(argv[i])))
 		{
 			printf("Error\n");
 			return (1);
