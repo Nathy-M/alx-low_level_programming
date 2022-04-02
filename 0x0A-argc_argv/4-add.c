@@ -16,24 +16,24 @@ int main(int argc, char *argv[])
 	unsigned int sum = 0;
 	unsigned int num;
 
-	if (argc < 3)
+	if (argc < 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-	while (argc-- && argc > 0)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 0; argv[argc][i] != '\0'; i++)
+		if ((argv[i] >= 65 && argv[i] <= 90) || (argv[i] >= 97 && argv[i] <= 122))
 		{
-			if (!(isdigit(argv[argc][i])))
-			{
-				printf("Error\n");
-				return (1);
-			}
-			num = atoi(argv[argc]);
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			num = atoi(argv[i]);
 			sum += num;
 		}
 	}
 		printf ("%d\n", sum);
-		return (sum);
+		return (0);
 }
