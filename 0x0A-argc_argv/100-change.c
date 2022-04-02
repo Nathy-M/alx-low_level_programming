@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int cents;
 	int c = 0;
 
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -24,11 +24,7 @@ int main(int argc, char *argv[])
 		printf("0");
 	}
 
-	if (cents % 25 >= 0)
-	{
-		c += cents / 25;
-		cents = cents % 25;
-	}
+	
 	if (cents % 10 >= 0)
 	{
 		c += cents / 10;
