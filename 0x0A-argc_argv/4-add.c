@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * main - main function
  * @argc: size of the argv array
@@ -11,27 +12,27 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int sum = 0;
+	unsigned int i;
+	unsigned int sum = 0;
+	unsigned int num;
 
-	if (argc < 1)
+	if (argc < 3)
 	{
 		printf("0\n");
+		return (0);
 	}
-
-	for (i = 1; i < argc; i++)
+	while (argc-- && argc > 0)
 	{
-		if (!(isdigit(argv[i])))
+		for (i = 0; argv[argc][i] != '\0'; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!(isdigit(argv[argc][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			num = atoi(argv[argc]);
+			sum += num;
 		}
-		else
-		{
-			sum += atoi(argv[i]);
-		}
-	}
-	printf("%d\n", sum);
-
-	return (0);
+		printf ("%d\n", sum);
+		return (sum);
 }
