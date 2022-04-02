@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 		if ((argv[i] >= 65 && argv[i] <= 90) || (argv[i] >= 97 && argv[i] <= 122))
 		{
 			printf("Error\n");
+			return (1);
 		}
 		else
 		{
