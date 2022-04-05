@@ -28,14 +28,14 @@ char *_strdup(char *str)
 		str++;
 	}
 
-	s = malloc((n + 1) * sizeof(char));
+	s = malloc((n) * sizeof(char));
 
 	if (s == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i < n + 1; i++)
+	for (i = 0; i < n; i++)
 	{
 		s[i] = str[i];
 	}
