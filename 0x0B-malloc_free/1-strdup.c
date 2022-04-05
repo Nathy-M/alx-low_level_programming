@@ -35,7 +35,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; s[i]; i++)
+	for (i = 0; str[i]; i++)
 	{
 		s[i] = str[i];
 		_putchar(s[i]);
