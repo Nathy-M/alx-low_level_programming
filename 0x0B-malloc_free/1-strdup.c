@@ -38,8 +38,9 @@ char *_strdup(char *str)
 	for (i = 0; str[i]; i++)
 	{
 		s[i] = str[i];
+		_putchar(str[i]);
 	}
-	_putchar(s);
+
 	s[n] = '\0';
 
 	return (s);
