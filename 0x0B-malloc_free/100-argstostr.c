@@ -41,9 +41,9 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			args[arg] = av[i][j];
+			args[arg++] = av[i][j];
 		}
-		args[arg] = '\n';
+		args[arg++] = '\n';
 	}
 	args[count] = '\0';
 
