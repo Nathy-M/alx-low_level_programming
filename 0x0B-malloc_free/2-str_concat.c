@@ -33,11 +33,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (str_len1 > str_len2)
 	{
-		str_con = malloc(str_len1 * sizeof(char));
+		str_con = malloc((str_len1 + 7) * sizeof(char));
 	}
 	else
 	{
-		str_con = malloc(str_len2 * sizeof(char));
+		str_con = malloc((str_len2 + 7) * sizeof(char));
 	}
 	if (str_con == NULL)
 	{
