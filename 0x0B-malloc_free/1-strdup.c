@@ -14,6 +14,8 @@
 
 char *_strdup(char *str)
 {
-	strdup(str);
-	return (str);
+	char *s;
+
+	s = strdup(str);
+	return (s);
 }
