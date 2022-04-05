@@ -38,7 +38,6 @@ char *_strdup(char *str)
 	for (i = 0; str[i]; i++)
 	{
 		s[i] = str[i];
-		_putchar(s[i]);
 	}
 	s[n] = '\0';
 
