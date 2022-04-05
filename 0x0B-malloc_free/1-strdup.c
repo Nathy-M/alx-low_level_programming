@@ -8,7 +8,7 @@
  * @str: string to be checked for.
  *
  * Return: On success, the _strdup function returns a pointer
- * to the duplicated string Or returns NULL if insufficient 
+ * to the duplicated string Or returns NULL if insufficient
  * memory was available
  */
 
@@ -35,7 +35,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n + 1; i++)
 	{
 		s[i] = str[i];
 	}
