@@ -40,6 +40,10 @@ int **alloc_grid(int width, int height)
 			two_dim[row][column] = 0;
 		}
 	}
+	for (row = 0; row < height; row++)
+	{
+		free(two_dim[row]);
+	}
 	free(two_dim);
 
 	return (two_dim);
