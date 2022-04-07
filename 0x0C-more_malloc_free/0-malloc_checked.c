@@ -9,10 +9,11 @@ void *malloc_checked(unsigned int b)
 {
 	void *mal;
 
-	mal = malloc(sizeof(unsigned int) * b);
+	mal = malloc(b);
 
 	if (mal == NULL)
 	{
-		_putchar(98);
+		exit(98);
 	}
+	return (mal);
 }
