@@ -4,6 +4,10 @@
 
 /**
  * malloc_checked - a function that allocates memory using malloc.
+ * @b: memory to be allocated
+ *
+ * Return: returns a pointer to an aloctaed memmory.
+ * If malloc fails, the function terminates the process by status value of 98
  */
 void *malloc_checked(unsigned int b)
 {
@@ -15,5 +19,4 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
-	return (mal);
 }
