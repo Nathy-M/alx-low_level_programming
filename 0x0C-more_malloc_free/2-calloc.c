@@ -30,7 +30,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (num = 0; num < nmemb * size; num++)
 	{
-		cal[num] = 0;
+		cal[num] = '\0';
 	}
 	return (cal);
 }
