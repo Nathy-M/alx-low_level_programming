@@ -14,7 +14,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *cal;
+	void *cal, *call;
 	unsigned int num;
 
 	if (nmemb < 0 || size < 0)
@@ -27,10 +27,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
+	call = cal;
 
 	for (num = 0; num < nmemb * size; num++)
 	{
-		cal[num] = '\0';
+		call[num] = '\0';
 	}
+
 	return (cal);
 }
