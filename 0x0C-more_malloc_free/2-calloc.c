@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	call = cal;
 
-	for (num = 0; num < nmemb * size; num++)
+	for (num = 0; num < nmemb; num++)
 	{
 		call[num] = '\0';
 	}
