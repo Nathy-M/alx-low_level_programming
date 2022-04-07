@@ -13,6 +13,6 @@ void *malloc_checked(unsigned int b)
 
 	if (mal == NULL)
 	{
-		return (98);
+		_putchar(98);
 	}
 }
