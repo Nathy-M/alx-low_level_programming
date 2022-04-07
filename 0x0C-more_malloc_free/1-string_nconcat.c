@@ -37,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str_nconcat[i++] = s1[count];
 	}
 
-	for (count = 0; count < n && s2[count] != '\0'; count++)
+	for (count = 0; count < n && s2[count]; count++)
 	{
 		str_nconcat[i++] = s2[count];
 	}
@@ -45,4 +45,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	return (str_nconcat);
 }
-	
