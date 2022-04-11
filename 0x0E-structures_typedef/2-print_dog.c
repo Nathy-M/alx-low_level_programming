@@ -9,6 +9,13 @@
 
 void print_dog(struct dog *d)
 {
+	struct dog
+	{
+		char *name;
+		float age;
+		char *owner;
+	};
+
 	if (d == NULL)
 	{
 		return;
