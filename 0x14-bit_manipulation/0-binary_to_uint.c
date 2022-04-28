@@ -18,8 +18,8 @@ unsigned int binary_to_uint(const char *b)
 
 	for (str_len = 0; b[str_len];)
 	{
-	str_len++;
-	}	
+		str_len++;
+	}
 
 	for (str_len -= 1; str_len >= 0; str_len--)
 	{
