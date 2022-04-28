@@ -12,19 +12,18 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
-	unsigned int num;
 	unsigned int str_len;
 	unsigned int i;
 
 	str_len = strlen(b);
-	if (b != '0' || b != '1' || b == NULL)
-	{
-		return (0);
-	}
 
 	for (i = 0; i < str_len; i++)
 	{
-		sum = sum + (num[i] * pow(2, i));
+		if (b[i] != '0' && b[i] != '1')
+		{
+			return (0);
+		}
+		sum = sum + (b[i] * pow(2, i));
 	}
 	return (sum);
 }
