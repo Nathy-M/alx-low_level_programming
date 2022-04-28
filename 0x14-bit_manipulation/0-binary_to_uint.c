@@ -30,7 +30,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 		power = pow(2, i);
-		sum = sum + (b[i] * power);
+		sum = sum + ((b[i] - '0') * power);
 	}
 	return (sum);
 }
