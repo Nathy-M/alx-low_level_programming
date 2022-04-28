@@ -10,8 +10,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
-	unsigned int str_len;
-	int i;
+	int str_len;
 	unsigned int power = 1;
 
 	if (b == '\0')
@@ -22,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 	str_len++;
 	}	
 
-	for (i = str_len - 1; i >= 0; i--)
+	for (str_len -= 1; str_len >= 0; str_len--)
 	{
 		if (b[i] != '0' && b[i] != '1')
 		{
