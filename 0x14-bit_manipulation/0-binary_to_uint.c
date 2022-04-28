@@ -13,6 +13,10 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int sum = 0;
 	unsigned int str_len;
 	unsigned int i;
+	unsigned int power;
+
+	if (b == '\0')
+		return(0);
 
 	for (str_len = 0; b[str_len];)
 	{
@@ -25,7 +29,8 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		sum = sum + (b[i] * pow(2, i));
+		power = pow(2, i);
+		sum = sum + (b[i] * power);
 	}
 	return (sum);
 }
